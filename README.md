@@ -3,6 +3,8 @@
 A macOS Spotlight-style launcher for Windows and macOS, built with Electron. Press a hotkey, type, and open apps, files and folders, run quick calculations, or search the web.
 
 <!-- Add a screenshot: ![Screenshot](docs/screenshot.png) -->
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/eb37ea3d-c841-4800-b422-3b323d5d8a75" />
+
 
 [Türkçe README](README.tr.md)
 
