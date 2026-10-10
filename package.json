@@ -1,0 +1,23 @@
+{
+  "name": "spotlight-clone",
+  "version": "1.0.0",
+  "description": "A macOS Spotlight-style launcher and file search for Windows and macOS, built with Electron",
+  "main": "main.js",
+  "license": "MIT",
+  "keywords": ["spotlight", "launcher", "search", "electron", "windows", "macos"],
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0"
+  },
+  "build": {
+    "appId": "com.example.spotlightclone",
+    "productName": "Spotlight Clone",
+    "files": ["main.js", "preload.js", "i18n.js", "renderer/**/*", "package.json"],
+    "win": { "target": "nsis" },
+    "mac": { "target": "dmg" }
+  }
+}

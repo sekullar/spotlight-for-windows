@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="panel">
+    <div id="bar">
+      <svg id="mag" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></svg>
+      <input id="q" type="text" placeholder="Spotlight Araması" spellcheck="false" autocomplete="off" autofocus>
+      <span id="status"></span>
+      <div id="progress"></div>
+    </div>
+    <div id="list"></div>
+    <div id="footer" hidden></div>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>
