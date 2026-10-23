@@ -14,6 +14,7 @@ A macOS Spotlight-style launcher for Windows and macOS, built with Electron. Pre
 - **Fuzzy search** that ignores accents and case, grouped results (Top Hit, Applications, Folders, Documents, …), real file icons, and ranking that learns from what you open.
 - **Calculator:** type `12*8+4` and press Enter to copy the result.
 - **Commands:** type `quit` to exit or `rescan` to rebuild the index.
+- **Dynamic Bar integration (Windows):** tray menu > Settings > "Integrate with Dynamic Bar". The hotkey then opens the search inside Dynamic Bar, using this app's index and results. The two apps find each other automatically (no API key to paste); if Dynamic Bar is not running, the normal bar opens.
 - **Runs in the background** from the system tray, with an optional launch-at-startup setting.
 - **Languages:** English and Türkçe, switchable from the tray menu.
 

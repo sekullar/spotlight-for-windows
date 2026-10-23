@@ -397,11 +397,22 @@ function startApi() {
   server.listen(0, '127.0.0.1', () => { apiPort = server.address().port; syncLink(); });
 }
 
+// Dynamic Bar publishes its port and key here while its API is on, so no key has to be pasted by hand.
+// A key typed into the settings window still wins.
+function dynBarLink() {
+  try {
+    const l = JSON.parse(fs.readFileSync(path.join(LINK_DIR, 'dynamic-bar.json'), 'utf8'));
+    return l && l.app === 'dynamic-bar' && Number.isInteger(l.port) ? l : null;
+  } catch { return null; }
+}
+
 function dynBarRequest(method, pathname, body, timeout = 600) {
   return new Promise((resolve) => {
     const headers = { 'Content-Type': 'application/json' };
-    if (settings.dynamicBarToken) headers.Authorization = 'Bearer ' + settings.dynamicBarToken;
-    const req = http.request({ host: '127.0.0.1', port: DYNBAR_PORT, path: pathname, method, headers, timeout }, (res) => {
+    const link = dynBarLink();
+    const token = settings.dynamicBarToken || (link && link.token);
+    if (token) headers.Authorization = 'Bearer ' + token;
+    const req = http.request({ host: '127.0.0.1', port: (link && link.port) || DYNBAR_PORT, path: pathname, method, headers, timeout }, (res) => {
       let data = '';
       res.on('data', (d) => { if (data.length < 4096) data += d; });
       res.on('end', () => resolve({ ok: res.statusCode === 200, body: data }));

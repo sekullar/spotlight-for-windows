@@ -29,7 +29,7 @@ module.exports = {
     dbFound: 'Dynamic Bar is running',
     dbMissing: 'Dynamic Bar was not found. The normal Spotlight bar opens instead.',
     dbToken: 'Dynamic Bar API key',
-    dbTokenHint: 'Only needed if you set an API key in Dynamic Bar.',
+    dbTokenHint: 'Optional. The key is found automatically while both apps run.',
   },
   tr: {
     languageName: 'Türkçe',
@@ -60,6 +60,6 @@ module.exports = {
     dbFound: 'Dynamic Bar çalışıyor',
     dbMissing: 'Dynamic Bar bulunamadı. Bunun yerine normal Spotlight çubuğu açılır.',
     dbToken: 'Dynamic Bar API anahtarı',
-    dbTokenHint: 'Yalnızca Dynamic Bar\'da API anahtarı tanımladıysan gerekir.',
+    dbTokenHint: 'İsteğe bağlı. İki uygulama çalışırken anahtar otomatik bulunur.',
   },
 };

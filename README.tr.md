@@ -13,6 +13,7 @@ Windows ve macOS için, Electron ile yazılmış macOS Spotlight benzeri bir ba�
 - Hesap makinesi (`12*8+4`), komutlar (`quit`, `rescan` / `tara`).
 - Sistem tepsisinde arka planda çalışır, isteğe bağlı olarak Windows ile başlar.
 - Diller: English ve Türkçe. Tepsi menüsünden değiştirilir.
+- Dynamic Bar entegrasyonu (Windows): tepsi menüsü > Ayarlar > "Dynamic Bar ile entegre ol". Kısayol aramayı Dynamic Bar içinde açar; sonuçlar bu uygulamanın dizininden gelir. İki uygulama birbirini otomatik bulur (API anahtarı yapıştırmak gerekmez); Dynamic Bar çalışmıyorsa normal çubuk açılır.
 
 ## Kurulum
 
