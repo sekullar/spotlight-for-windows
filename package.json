@@ -16,7 +16,7 @@
   "build": {
     "appId": "com.example.spotlightclone",
     "productName": "Spotlight Clone",
-    "files": ["main.js", "preload.js", "i18n.js", "renderer/**/*", "package.json"],
+    "files": ["main.js", "preload.js", "preload-settings.js", "i18n.js", "renderer/**/*", "package.json"],
     "win": { "target": "nsis" },
     "mac": { "target": "dmg" }
   }

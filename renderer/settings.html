@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'">
+  <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+  <h2 id="heading"></h2>
+  <label class="opt">
+    <input type="checkbox" id="on">
+    <div><b id="toggle"></b><span id="desc"></span></div>
+  </label>
+  <div id="state"><i></i><span></span></div>
+  <label class="field" id="tokenRow">
+    <b id="tokenLabel"></b>
+    <input type="text" id="token" spellcheck="false" autocomplete="off">
+    <small id="tokenHint"></small>
+  </label>
+  <script src="settings.js"></script>
+</body>
+</html>
